@@ -1,0 +1,123 @@
+:root {
+    --gradient: linear-gradient(45deg,
+            #845ec2,
+            #d65db1,
+            #ff6f91,
+            #ff9671,
+            #ffc75f,
+            #f9f871);
+}
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: animate 15s infinite alternate;
+}
+@keyframes animate{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+#container {
+    color: #fff;
+}
+.time{
+    width: 525px;
+    border: 4px solid #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: linear-gradient(113.5deg, rgb(234, 234, 234) 22.3%, rgb(201, 234, 211) 56.6%, rgb(255, 180, 189) 90.9%);
+    /* animation: animated 10s infinite alternate; */
+    /* background-size: 200%; */
+    color: rgb(53, 49, 49);
+}
+@keyframes animated{
+    0%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+}
+.digit {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-btn {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.btn {
+    color: #fff;
+    /* width: 70px;
+    height: 70px; */
+    padding: 10px 20px;
+    border: 0px;
+    margin: 0px 6px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black !important;
+    /* border: 1px solid #fff !important; */
+}
+
+#start {
+    background-color: rgb(57, 57, 33);
+}
+
+#stop {
+    background-color: rgba(32, 115, 115, 0.818);
+}
+
+#Reset {
+    background-color: red;
+}
+
+#lap {
+    background-color: brown;
+}
+.lap{
+    margin: 15px auto 0px auto;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid rgb(59, 56, 56);
+    padding: 5px;
+    width: 350px;
+    color:rgb(59, 56, 56);
+
+}
+.digit1{
+    font-size: 30px;
+    padding: 2px;
+}
+.lap_number{
+    padding-right: 33px;
+    /* color: black; */
+}
+.text1{
+    font-size: 15px;
+    /* vertical-align: sub; */
+}
+/* .lap_section{
+    height: 50vh;
+    overflow-y: scroll;
+} */
